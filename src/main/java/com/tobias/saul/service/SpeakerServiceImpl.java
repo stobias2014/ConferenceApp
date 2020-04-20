@@ -12,6 +12,7 @@ import com.tobias.saul.repository.SpeakerRepository;
 @Service("speakerService")
 public class SpeakerServiceImpl implements SpeakerService {
 	
+	@Autowired
 	private SpeakerRepository speakerRepository;
 	
 	public SpeakerServiceImpl() {
@@ -27,7 +28,7 @@ public class SpeakerServiceImpl implements SpeakerService {
 		return speakerRepository.findAll();
 	}
 	
-	@Autowired
+	
 	public void setRepository(SpeakerRepository speakerRepository) {
 		System.out.println("SpeakerServiceImpl setter");
 		this.speakerRepository = speakerRepository;
