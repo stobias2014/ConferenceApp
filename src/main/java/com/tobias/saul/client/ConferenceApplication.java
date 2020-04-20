@@ -4,8 +4,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 import com.tobias.saul.service.SpeakerService;
-import com.tobias.saul.service.SpeakerServiceImpl;
-
 import con.tobias.saul.config.AppConfig;
 
 public class ConferenceApplication {
@@ -19,6 +17,7 @@ public class ConferenceApplication {
 		SpeakerService service = appContext.getBean("speakerService", SpeakerService.class);
 		
 		System.out.println("Speaker: " + service.findAll().get(0));
+		
 	}
 
 }
