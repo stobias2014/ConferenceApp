@@ -8,11 +8,15 @@ import com.tobias.saul.repository.SpeakerRepository;
 
 public class SpeakerServiceImpl implements SpeakerService {
 	
-	private SpeakerRepository speakerRepository = new HibernateSpeakerRepositoryImpl();
+	private SpeakerRepository speakerRepository;
 	
 	@Override
 	public List<Speaker> findAll() {
 		return speakerRepository.findAll();
+	}
+	
+	public void setRepository(SpeakerRepository speakerRepository) {
+		this.speakerRepository = speakerRepository;
 	}
 
 }
