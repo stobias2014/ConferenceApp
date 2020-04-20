@@ -4,6 +4,7 @@
   <artifactId>ConferenceApp</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+  
     <build>
     <plugins>
       <plugin>
@@ -22,4 +23,11 @@
     	<maven.compiler.source>1.8</maven.compiler.source>
     	<maven.compiler.target>1.8</maven.compiler.target>
     </properties>
+    <dependencies>
+    	<dependency>
+    		<groupId>org.springframework</groupId>
+    		<artifactId>spring-context</artifactId>
+    		<version>5.2.0.RELEASE</version>
+    	</dependency>
+    </dependencies>
 </project>
