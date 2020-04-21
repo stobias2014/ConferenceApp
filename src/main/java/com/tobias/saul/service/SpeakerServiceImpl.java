@@ -5,6 +5,7 @@ import java.util.List;
 import javax.annotation.PostConstruct;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.tobias.saul.model.Speaker;
@@ -12,6 +13,7 @@ import com.tobias.saul.repository.HibernateSpeakerRepositoryImpl;
 import com.tobias.saul.repository.SpeakerRepository;
 
 @Service("speakerService")
+@Profile("dev")
 public class SpeakerServiceImpl implements SpeakerService {
 	
 	@Autowired
