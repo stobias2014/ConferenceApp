@@ -4,6 +4,7 @@ public class Speaker {
 	
 	private String firstName;
 	private String lastName;
+	private double seedNum;
 	
 	
 	public String getFirstName() {
@@ -18,9 +19,18 @@ public class Speaker {
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+	
+	
+	
 	@Override
 	public String toString() {
-		return "Speaker [firstName=" + firstName + ", lastName=" + lastName + "]";
+		return "Speaker [firstName=" + firstName + ", lastName=" + lastName + ", seedNum=" + seedNum + "]";
+	}
+	public double getSeedNum() {
+		return seedNum;
+	}
+	public void setSeedNum(double seedNum) {
+		this.seedNum = seedNum;
 	}
 	
 	
